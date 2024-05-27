@@ -9,7 +9,7 @@ pipeline {
         stage('Test') {
             steps {
         sh '''
-         gcloud compute scp /var/lib/jenkins/workspace/Dev-Op-Project_main/index.html root@ali-devops-project-server:/var/www/html --zone=us-central1-a
+         gcloud compute scp --recurse /var/lib/jenkins/workspace/Dev-Op-Project_main/ root@ali-devops-project-server:/var/www/html --zone=us-central1-a
         '''
       }
         }
