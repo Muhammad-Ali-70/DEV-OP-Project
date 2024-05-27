@@ -9,7 +9,7 @@ pipeline {
         stage('Test') {
             steps {
         sh '''
-         gcloud compute scp /var/lib/jenkins/workspace/Jenkins-GDC-Demo_main/index.html root@appserver:/var/www/html --zone=us-west4-b
+         gcloud compute scp /var/lib/jenkins/workspace/Dev-Op-Project_main/index.html root@ali-devops-project-server:/var/www/html --zone=us-central1-a
         '''
       }
         }
